@@ -1,10 +1,12 @@
 package generalSimulator;
 
+import java.util.Observable;
 import java.util.Observer;
 
-abstract class View implements Observer {
+abstract public class View implements Observer {
 
-    EventQueue eventQueue = new EventQueue();
+    @Override
+    public void update(Observable o, Object arg) {
 
-    abstract public void update();
+    }
 }
